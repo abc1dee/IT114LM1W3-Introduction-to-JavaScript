@@ -47,16 +47,21 @@ console.log("division")
 
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#string_operators
 // Your code here
-
+let mystring = "alpha";
+mystring += "bet"; // evaluates to "alphabet" and assigns this value to mystring.
+console.log(mystring);
 // Checkpoint 1.3 What operators did you use?
-// Answer: 
+// Answer: plus
 
 // TODO 1.6 Try out the different logical operators
 // See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#logical_operators
 // Your code here
+const a1 = true && true; // t && t returns true
+const o1 = true || true; // t || t returns true
+const n1 = !true; // !t returns false
 
 // Checkpoint 1.4 What operators did you use?
-// Answer: 
+// Answer:  && , ||, and !
 
 
 // TODO 1.7 Try out the different relational operators
@@ -64,5 +69,15 @@ console.log("division")
 
 
 // Checkpoint 1.5 What does [] == false evaluate to? Why does that happen? Research why
-// Answer: 
+// Answer: When comparing the empty array [] to false in JavaScript, the result is true. This happens because when using the abstract equality comparison (==) in JavaScript, the empty array is coerced to a number, which results in 0, and then compared to false, which also coerces to 0. Therefore, [] == false evaluates to true.
 // Your code here
+
+let a = 5;
+let b = 10;
+
+console.log(a < b); // Output: true
+console.log(a > b); // Output: false
+console.log(a <= b); // Output: true
+console.log(a >= b); // Output: false
+console.log(a === b); // Output: false
+console.log(a !== b); // Output: true
